@@ -9,7 +9,7 @@ class HiveService {
 
   factory HiveService() => _instance;
 
-  HiveService._internal();
+  HiveService._internal(); //means  it is a private constructor 
 
   Future<void> init() async {
     await Hive.initFlutter();
